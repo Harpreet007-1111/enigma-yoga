@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Enigma",
+  "name": "A yoga website created using react",
   "icons": [
     {
       "src": "favicon.ico",
