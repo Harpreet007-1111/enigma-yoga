@@ -49,7 +49,7 @@ function Services() {
       id: 6,
       image: '/assets/vanasana.jpg',
       title: 'Vinyasa Yoga',
-      description: 'Flow with grace and fluidity in our Vinyasa Yoga classes. Characterized by dynamic sequences that synchronize breath with movement, these sessions offer a dynamic and energetic practice. Experience the seamless connection between body and breath as you build strength, increase flexibility, and find your flow on the mat.',
+      description: 'Flow with grace and fluidity in our Vinyasa Yoga classes. Characterized by dynamic sequences that synchronize breath with movement, these sessions offer a dynamic and energetic practice. Experience the seamless connection between body and breath as you build strength, increase flexibility.',
       time: '5',
       goal: 'Intermediate'
     }
