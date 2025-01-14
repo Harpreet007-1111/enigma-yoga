@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #4169E1;
   overflow-x: hidden;
 }
 
@@ -324,13 +323,14 @@ h3 {
 
 .main-about {
   position: relative;
-  background-color: #4169E1;
+  background-color: blanchedalmond;
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  padding: 3rem 0;
 }
 
 .main-about .content {
@@ -356,7 +356,7 @@ h3 {
 }
 
 .main-about .content p {
-  color: #FFFDD0;
+  color: #000;
   padding: 0.8rem 1rem;
   line-height: 33px;
   text-align: justify;
@@ -438,15 +438,19 @@ h3 {
 
 /* Styles For Service Page */
 
+.service-cont {
+  background-color: beige;
+}
+
 .main-services {
-  background-color: #4169E1;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
   padding: 1rem 0;
 }
 
@@ -486,12 +490,11 @@ h3 {
 
 .main-services .cards .wrapper .content {
   width: 90%;
-  height: 100%;
-  min-height: 300px;
+  height: 100% auto;
   background-color: #FFDAB9;
   position: absolute;
   top: 85%;
-  padding: .8rem;
+  padding: 1.5rem .8rem;
   margin: 1rem 5%;
   border-radius: 3rem 0 3rem 0;
   text-align: center;
@@ -520,7 +523,7 @@ h3 {
 .main-services .content > .line .icons {
   font-size: 2.5rem;
   color: #4169E1;
-  margin: 0 .8rem;
+  margin: 1.4rem .8rem;
 }
 
 .main-services .content > .line p {
@@ -533,6 +536,7 @@ h3 {
 /* Responsive Service Page */
 @media (max-width: 1050px) {
   .main-services {
+    width: 100%;
     grid-template-columns: 1fr;
   }
   .main-services .cards {
@@ -541,24 +545,15 @@ h3 {
     justify-content: center;
     width: 80%;
     margin-top: 1rem;
-    margin-bottom: 30%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 0;
-  }
-  .main-services .cards .wrapper .content {
-    max-height: 0px;
-    min-height: 280px;
-    margin: 1rem 2%;
   }
 }
 
 @media (max-width: 720px) {
   .main-services .cards {
     margin-bottom: 40%;
-  }
-  .main-services .cards .wrapper .content {
-    min-height: 270px;
   }
   .main-services .content > p, .main-services .content > .line p {
     font-size: small;
@@ -568,6 +563,9 @@ h3 {
 @media (max-width: 650px) {
   .main-services .cards {
     margin-bottom: 45%;
+  }
+  .main-services .content > .line .icons {
+  margin: 1.2rem .8rem;
   }
   .main-services .cards .wrapper .content {
     width: 120%;
@@ -580,52 +578,49 @@ h3 {
   }
 }
 
-@media (max-width: 450px) {
-  .main-services .cards {
-    margin-bottom: 70%;
-    margin-left: 2.1rem;
-  }
-  .main-services .cards .wrapper .content {
-    min-height: 300px;
-  }
-}
-
 /* End of styles for Service Page */
 
 /* Styles for Poses Page */
-
-.pose-main {
-  /* background-color: #FFDAB9; */
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 1rem 0;
+.poses-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pose-main .cards {
-  width: 25%;
-  display: inline-flex;
+.main-pose {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #FFDAB9;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0;
+}
+
+.main-pose .cards {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: .4rem 0;
+  margin: .4rem;
 }
 
-.pose-main .cards img {
+.main-pose .cards img {
   background-color: rgba(0, 0, 0, 0.1);
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  padding: .2rem 0;
-  margin: .8rem 0;
+  padding: .3rem;
+  margin: .8rem;
 }
 
-.pose-main .cards h4 {
+.main-pose .cards h4 {
   text-transform: capitalize;
-  color: #FFDAB9;
+  color: #000;
   font-family: 'Cormorant Garamond', serif;
   font-size: larger;
   letter-spacing: 1.2px;
@@ -633,21 +628,15 @@ h3 {
 
 /* Responsive Pose Page */
 
-@media (max-width: 750px) {
-  .pose-main .cards {
-    width: 30%;
-    margin: 1rem .5rem;
+@media (max-width: 650px) {
+  .main-pose {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 650px) {
-  .pose-main .cards {
-    width: 40%;
-    margin: 1rem 1.2rem;
-  }
-  .pose-main .cards h4 {
-    font-size: medium;
-    letter-spacing: .15rem;
+@media (max-width: 400px) {
+  .main-pose {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -657,7 +646,7 @@ h3 {
 
 .price-cont h2 {
   text-align: center;
-  color: #FFDAB9;
+  color: #4169E1;
   padding: .4rem;
   margin: .4rem 0;
 }
