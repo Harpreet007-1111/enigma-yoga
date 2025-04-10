@@ -8,7 +8,7 @@ function About() {
         <div className="wrapper">
       <img src="/assets/lotus.png" alt="A lotus flower icon" />
         <h1>ABOUT US</h1>
-        <h3>HOME | ABOUT US</h3>
+        <p>HOME | ABOUT US</p>
         </div>
       </section>
 

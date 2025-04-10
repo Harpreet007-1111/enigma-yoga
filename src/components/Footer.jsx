@@ -7,26 +7,33 @@ function Footer() {
   const [email, setEmail] = useState('');
 
   return (
-    <div className='footer-main'>
-        <footer>
+    <div className="footer-main">
+      <footer>
         <img src="/logo512.png" alt="Logo of Enigma Yoga website" />
-          <div className="subscribe">
-          <p>Subscribe today! </p>
-            <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
-            <button>Subscribe</button>
-          </div>
-
-        <div className="social">
-          <p>Follow us: </p>
-          <FaFacebookF className='icons' />
-          <AiFillInstagram className='icons' />
-          <FaTwitter className='icons' />
+        <h2>Subscribe today!</h2>
+        <div className="subscribe">
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button>Subscribe</button>
         </div>
-          <hr />
-          <p>Copyright 2023. All Rights Reserved.</p>
-        </footer>
+        <h2>Follow Us: </h2>
+        <div className="social">
+          <FaFacebookF className="icons" />
+          <AiFillInstagram className="icons" />
+          <FaTwitter className="icons" />
+        </div>
+        <hr />
+        <p className="copy">
+          &copy; Enigma Yoga All Rights Reserved 2023. <br /> Created With Love
+          By Harpreet Jassy.
+        </p>
+      </footer>
     </div>
-  )
+  );
 }
 
 export default Footer;

@@ -41,12 +41,7 @@ function Poses() {
       id: 8,
       images: "/assets/shoulder-stand-pose.svg",
       title: "sarvangasana",
-    },
-    {
-      id: 9,
-      images: "/assets/standing-hand-pose.svg",
-      title: "parivritta",
-    },
+    }
   ];
 
   return (
@@ -55,7 +50,7 @@ function Poses() {
         <div className="wrapper">
           <img src="/assets/lotus.png" alt="A lotus flower icon" />
           <h1>POSES</h1>
-          <h3>HOME | POSES</h3>
+          <p>HOME | POSES</p>
         </div>
       </section>
 

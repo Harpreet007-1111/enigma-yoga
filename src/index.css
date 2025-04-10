@@ -21,11 +21,11 @@ body::-webkit-scrollbar-thumb {
 
 p,
 li {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar styles */
@@ -82,7 +82,7 @@ h2 {
   color: #4169e1;
   text-decoration: none;
   cursor: pointer;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .menu,
@@ -151,8 +151,9 @@ nav a {
   text-decoration: none;
   font-size: medium;
   text-transform: uppercase;
-  font-family: "Quicksand", serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 1.2px;
+  font-weight: 700;
   margin: 0 1rem;
   color: #4169e1;
   transition: 0.9s cubic-bezier(0.23, 1, 0.32, 1);
@@ -169,14 +170,15 @@ nav a:hover {
   nav {
     background-color: #ffdab9;
     position: fixed;
-    top: 13.1%;
+    top: 10%;
     right: 0%;
     width: 60%;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
   }
   nav a {
-    margin: 0.8rem 0;
+    margin: 1rem .4rem 1.5rem 0;
+    font-size: larger;
   }
 }
 
@@ -202,31 +204,34 @@ nav a:hover {
 }
 
 .home-cont .p {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   position: absolute;
   display: flex;
+  color: #ffdab9;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .home-cont .p h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #fffdd0;
+  color: #4169e1;
   padding: 0.4rem 1rem;
   margin: 0.4rem 5%;
   word-wrap: break-word;
 }
 
 .home-cont .p p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.25rem;
-  margin: 0.8rem 0;
+  margin: 0.8rem 8%;
   letter-spacing: 1.2px;
+  text-align: center;
+  line-height: 35px;
   color: #fffdd0;
 }
 
@@ -238,6 +243,7 @@ nav a:hover {
   color: #fffdd0;
   border-radius: 1rem 0 1rem 0;
   outline: none;
+  font-family: 'Lato', sans-serif;
   font-size: larger;
   cursor: pointer;
 }
@@ -259,7 +265,6 @@ nav a:hover {
 }
 
 /* End of styles for Home Page */
-
 /* Styles for About Page */
 
 @keyframes swing {
@@ -291,7 +296,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 250px;
 }
@@ -305,19 +310,28 @@ nav a:hover {
   animation: swing 5s ease-in-out infinite;
 }
 
+.section .wrapper h1 {
+  color: #4169e1;
+}
+
+.section .wrapper p {
+  color: #fffdd0;
+  letter-spacing: 1.2px;
+}
+
 h1 {
   margin: 0.4rem 0;
   padding: 0.4rem;
   text-align: center;
   letter-spacing: 1.3px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Nunito', sans-serif;
   font-size: xx-large;
   color: #fffdd0;
   animation: swing 5s ease-in-out infinite;
 }
 
 h3 {
-  font-family: "Quicksand", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: small;
   color: #fffdd0;
   letter-spacing: 1px;
@@ -334,6 +348,9 @@ h3 {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 8% 5%;
 }
 
 .main-about .content {
@@ -343,6 +360,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   justify-content: center;
 }
 
@@ -356,6 +374,8 @@ h3 {
 
 .main-about .content h2 {
   color: #4169e1;
+  font-weight: 500;
+  margin: 1rem 0;
 }
 
 .main-about .content p {
@@ -364,14 +384,14 @@ h3 {
   line-height: 33px;
   text-align: justify;
   font-size: medium;
-  font-family: "Open Sans", sans-serif;
-  margin: 0%;
+  padding: .5rem 2%;
+  font-family: 'Lato', sans-serif;
 }
 
 .main-about .images {
   position: absolute;
-  top: 10%;
-  right: 4%;
+  top: 20%;
+  right: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -411,11 +431,12 @@ h3 {
     margin: auto 5%;
   }
   .main-about .images {
-    top: -5%;
+    top: 0%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     justify-content: center;
     margin: 1rem 0;
     padding: 0.4rem 0;
@@ -435,9 +456,8 @@ h3 {
   .main-about .images #img1,
   .main-about .images #img2,
   .main-about .images #img3 {
-    width: 80%;
-    height: 80% auto;
-    margin: 0.4rem 0;
+    width: 100%;
+    left: 10%;
   }
 }
 
@@ -509,7 +529,8 @@ h3 {
   color: #4169e1;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   margin: 0.4rem 0;
 }
 
@@ -545,6 +566,9 @@ h3 {
     margin: auto;
   }
   .main-services .cards {
+    position: relative;
+    left: 0%;
+    top: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -568,6 +592,12 @@ h3 {
 }
 
 @media (max-width: 650px) {
+  .main-services {
+    margin: 0 0 10rem 0;
+  }
+  .main-services .cards {
+    margin: 9rem auto;
+  }
   .main-services .cards .wrapper .content {
     width: 105%;
   }
@@ -580,12 +610,12 @@ h3 {
 .pose-main {
   background-color: aliceblue;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 1.5rem 0;
+  padding: 3rem 0;
 }
 
 .pose-main .cards {
@@ -609,9 +639,10 @@ h3 {
 .pose-main .cards h4 {
   text-transform: capitalize;
   color: #000;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: larger;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.3px;
 }
 
 /* Responsive Pose Page */
@@ -639,14 +670,17 @@ h3 {
 
 .price-cont h2 {
   text-align: center;
-  color: #ffdab9;
-  padding: 0.4rem;
-  margin: 0.4rem 0;
+  color: #4169e1;
+  padding: 0.4rem 5%;
+  font-weight: 500;
+  margin: 2% 8%;
 }
 
 .price-cont p {
-  margin: 0.4rem 5%;
+  margin: 0.4rem 8%;
   text-align: center;
+  letter-spacing: 1.2px;
+  line-height: 33px;
 }
 
 .price-main {
@@ -656,17 +690,21 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
+  padding: 2% 8%;
+  margin: 2% 0;
 }
 
 .price-main .cards {
   background-color: #ffdab9;
+  width: 90%;
   min-height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  margin: 1rem 1.1rem;
+  padding: 2.5rem;
+  margin: 1.5rem 0;
+  border-radius: 50% 0 50% 0;
   animation: float 4s ease-in-out infinite;
 }
 
@@ -675,6 +713,7 @@ h3 {
   text-align: center;
   padding: 1rem;
   text-transform: uppercase;
+  font-weight: 500;
   letter-spacing: 1.2px;
   color: #4169e1;
   transform: translateY(-25%);
@@ -688,6 +727,7 @@ h3 {
 .price-main .cards h3 {
   color: #4169e1;
   font-size: larger;
+  font-weight: 500;
 }
 
 .price-main .cards button,
@@ -720,21 +760,27 @@ h3 {
   .contact-main .message button {
     font-size: medium;
   }
+  .price-main .cards {
+    border-radius: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
   .price-main {
     grid-template-columns: 1fr;
   }
+  .price-main .cards {
+    width: 100%;
+  }
 }
 
 /* End Of Styles For Poses Page */
-
 /* Styles for Contact Page */
 
 .contact-main {
   position: relative;
-  padding: 1rem 0;
+  padding: 2% auto;
+  margin: 5% 0;
 }
 
 .contact-main .wrapper {
@@ -766,7 +812,7 @@ h3 {
   padding: 3rem 1rem;
   margin: 1rem 0;
   border: 1px solid #fff;
-  border-radius: 3rem 0 3rem 0;
+  border-radius: 1rem;
 }
 
 .contact-main .wrapper .call .icons {
@@ -783,6 +829,7 @@ h3 {
 .contact-main .call > div .content h2 {
   text-transform: uppercase;
   letter-spacing: 1.3px;
+  font-weight: 600;
 }
 
 .contact-main .call > div .content p {
@@ -804,6 +851,7 @@ h3 {
 
 .contact-main .wrapper .message > div {
   background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -816,6 +864,7 @@ h3 {
   color: #fffdd0;
   padding: 0.4rem 0;
   margin: 0.4rem 0;
+  font-weight: 500;
   letter-spacing: 1.3px;
   text-transform: uppercase;
 }
@@ -827,8 +876,10 @@ h3 {
   padding: 1rem 1.2rem;
   margin: 0.8rem 0;
   outline: none;
-  border: 1px solid #4169e1;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #ffdab9;
   border-radius: 0.4rem;
+  letter-spacing: 1.3px;  
   font-size: large;
   color: #fffdd0;
 }
@@ -842,21 +893,33 @@ textarea::placeholder {
 .message input[type="text"]:focus,
 .message input[type="email"]:focus,
 textarea:focus {
-  border-color: #ffdab9;
+  border-color: #4169e1;
+  box-shadow: 0 0 5px #4169e1;
+  outline: none;
+  transform: translateY(-5%);
   transition: 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 textarea {
-  width: 80%;
-  height: 30%;
-  min-height: 150px;
   background-color: transparent;
+  width: 80%;
+  height: 150px;
+  padding: 1rem 1.2rem;
+  margin: 0.8rem 0;
   outline: none;
-  padding: 0.4rem;
-  margin: 0.4rem 0;
-  border: 2px solid #4169e1;
-  color: #fffdd0;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #ffdab9;
   border-radius: 0.4rem;
+  letter-spacing: 1.3px;  
+  font-size: large;
+  color: #fffdd0;
+}
+
+.message .btn {
+  padding: 1.2rem 2rem !important;
+  margin: 1rem 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
 }
 
 @media (max-width: 800px) {
@@ -866,10 +929,21 @@ textarea {
 }
 
 @media (max-width: 550px) {
+  .contact-main .message > div h2 {
+    font-size: larger;
+  }
   .message input[type="text"],
   .message input[type="email"],
   textarea {
-    font-size: small;
+    width: 95%;
+    font-size: medium;
+  }
+  .contact-main {
+    padding: 1.5rem;
+  }
+  .contact-main .wrapper {
+    width: 100%;
+    margin: 0 -2rem;
   }
 }
 
@@ -894,8 +968,8 @@ footer {
 }
 
 footer img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 4px solid #4169e1;
   border-radius: 50%;
   margin: 1rem 0;
@@ -905,16 +979,21 @@ footer img {
 footer > div {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
+}
+
+footer h2 {
+  margin: 1rem 0;
 }
 
 footer .subscribe input[type="email"] {
   background-color: #4169e1;
-  width: 80%;
-  padding: 1rem;
+  width: 100%;
+  padding: 1.5rem;
   margin: 0.8rem 0;
   border: none;
-  border-radius: 0.8rem 0 0 0.8rem;
+  border-radius: 1rem 0 0 1rem;
   outline: none;
   font-size: large;
   color: #fffdd0;
@@ -927,18 +1006,29 @@ footer .subscribe input[type="email"]::placeholder {
 footer .subscribe button {
   background-color: #fffdd0;
   outline: none;
-  padding: 1.15rem;
+  padding: 1.5rem;
   border: none;
   color: #4169e1;
-  margin: 0%;
-  border-radius: 0 0.8rem 0.8rem 0;
+  margin: .8rem 0;
+  font-size: large;
+  border-radius: 0 1rem 1rem 0;
   cursor: pointer;
 }
 
 footer .social .icons {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
   font-size: 3rem;
   margin: 1rem;
   color: #4169e1;
+}
+
+footer .social .icons:hover {
+  color: #000;
+  transform: scale(1.2);
+  transition: 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
 }
 
 hr {
@@ -949,23 +1039,32 @@ hr {
 
 footer p {
   text-align: center;
-  padding: 0.4rem 0;
-  margin: 0.4rem 0;
+  padding: .4rem;
+  margin: 0.4rem;
+}
+
+.copy {
+  letter-spacing: 1.3px;
+  line-height: 33px;
 }
 
 /* Responsive footer */
 
 @media (max-width: 550px) {
   footer p {
-    font-size: small;
+    width: 100%;
+    font-size: medium;
   }
   footer .subscribe input[type="email"],
   footer .subscribe button {
     font-size: small;
-    padding: 0.8rem;
+    padding: 1.2rem;
   }
   footer .social .icons {
-    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    object-fit: fill;
+    margin: 1rem .4rem;
   }
 }
 

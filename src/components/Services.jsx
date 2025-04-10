@@ -62,7 +62,7 @@ function Services() {
         <div className="wrapper">
           <img src="/assets/lotus.png" alt="A lotus flower icon" />
           <h1>OUR SERVICES</h1>
-          <h3>HOME | OUR SERVICES</h3>
+          <p>HOME | OUR SERVICES</p>
         </div>
       </section>
 
