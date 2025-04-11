@@ -36,14 +36,14 @@ function Price() {
         </div>
       </section>
 
-      <h2>OUR PLANS</h2>
+      <h2>Our Plans</h2>
       <p>
-        At Enigma Yoga, we offer thoughtfully designed plans to support every
-        stage of your wellness journey. Whether you're just beginning, looking
-        to deepen your practice, or ready to challenge your limits, our
-        Beginner, Intermediate, and Advanced plans are here to guide you with
-        intention, balance, and grace.
+        At Enigma Yoga, we offer thoughtfully crafted plans to support every
+        stage of your wellness journey. Whether you're just starting, deepening
+        your practice, or pushing your limits, our Beginner, Intermediate, and
+        Advanced plans guide you with intention, balance, and grace.
       </p>
+
       <main className="price-main">
         {plans.map((plan) => {
           return (

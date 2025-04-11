@@ -8,13 +8,15 @@ function Home() {
   return (
     <div className="home-cont">
       <div className="p">
-        <h1>Start healing your mind, body & soul</h1>
+        <h1>You've carried enough. <br /> It's time to breathe again.</h1>
         <p>
-          Embrace your journey to inner peace with Enigma Yoga — where every
-          breath brings balance, and every pose nurtures healing. Join a
-          sanctuary of strength, stillness, and soulful transformation.
+          At Enigma Yoga, we hold space for your healing — whether you're
+          feeling overwhelmed, out of balance, or just ready to reconnect. Every
+          breath, every pose, every pause is an invitation back to yourself.
         </p>
-        <button onClick={() => navigate("/#contact")}>Consult Now!</button>
+        <button onClick={() => navigate("/#contact")}>
+          Start Your Healing Journey
+        </button>
       </div>
     </div>
   );
